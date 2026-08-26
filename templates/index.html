@@ -1,1 +1,98 @@
+<!DOCTYPE html>
 
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ComFindr</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="page">
+
+        <section class="comfindr">
+
+            <h1 class="logo">
+                ComFindr
+            </h1>
+
+
+            <p class="subtitle">
+                Paste the Link and Find it!
+            </p>
+
+
+            <form id="searchForm">
+
+                <input
+                    type="url"
+                    id="video_url"
+                    name="video_url"
+                    placeholder="Enter YouTube video link"
+                    autocomplete="off"
+                    required
+                >
+
+
+                <input
+                    type="text"
+                    id="search_word"
+                    name="search_word"
+                    placeholder="Enter the word to search"
+                    autocomplete="off"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    id="searchButton"
+                >
+                    Search
+                </button>
+
+            </form>
+
+
+            <div
+                class="results"
+                id="results"
+            >
+
+                <p class="placeholder">
+
+                    The comments related to your
+                    search will appear here.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script
+        src="{{ url_for('static', filename='script.js') }}?v=1000"
+    ></script>
+
+
+</body>
+
+</html>
