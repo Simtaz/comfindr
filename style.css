@@ -1,0 +1,513 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =====================================
+   BODY
+===================================== */
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #ffffff;
+
+    color: #222;
+}
+
+
+/* =====================================
+   PAGE
+===================================== */
+
+.page {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 70px 8%;
+}
+
+
+/* =====================================
+   MAIN AREA
+===================================== */
+
+.comfindr {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.logo {
+
+    text-align: center;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: #1683ff;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================
+   SUBTITLE
+===================================== */
+
+.subtitle {
+
+    text-align: center;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 35px;
+}
+
+
+/* =====================================
+   FORM
+===================================== */
+
+#searchForm {
+
+    width: 100%;
+}
+
+
+/* =====================================
+   INPUTS
+===================================== */
+
+input {
+
+    width: 100%;
+
+    height: 52px;
+
+    border: 1px solid #bcbcbc;
+
+    border-radius: 6px;
+
+    padding: 0 15px;
+
+    font-size: 15px;
+
+    color: #222;
+
+    background: #ffffff;
+
+    outline: none;
+
+    margin-bottom: 14px;
+
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+
+input:focus {
+
+    border-color: #1683ff;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(22, 131, 255, 0.10);
+}
+
+
+input::placeholder {
+
+    color: #888;
+}
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+button {
+
+    width: 100%;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #4db7e8;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s,
+        transform 0.1s;
+}
+
+
+button:hover {
+
+    background: #279fd7;
+}
+
+
+button:active {
+
+    transform: scale(0.99);
+}
+
+
+button:disabled {
+
+    background: #aaa;
+
+    cursor: not-allowed;
+}
+
+
+/* =====================================
+   RESULTS
+===================================== */
+
+.results {
+
+    width: 100%;
+
+    min-height: 350px;
+
+    max-height: 550px;
+
+    margin-top: 25px;
+
+    padding: 18px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background: #fafafa;
+
+    overflow-y: auto;
+}
+
+
+/* =====================================
+   PLACEHOLDER
+===================================== */
+
+.placeholder {
+
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================
+   SUCCESS COUNT
+===================================== */
+
+.success {
+
+    color: #1683ff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+
+/* =====================================
+   COMMENT
+===================================== */
+
+.comment {
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 6px;
+
+    padding: 13px;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #333;
+
+    word-wrap: break-word;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =====================================
+   ERROR
+===================================== */
+
+.error {
+
+    color: #d93025;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    word-break: break-word;
+}
+
+
+/* =====================================
+   LOADING
+===================================== */
+
+.loading {
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 14px;
+
+    padding: 30px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   PROGRESS
+===================================== */
+
+.scan-progress {
+
+    color: #1683ff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    padding: 10px 0;
+
+    margin-top: 5px;
+
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 768px) {
+
+    .page {
+
+        padding: 50px 6%;
+    }
+
+
+    .comfindr {
+
+        max-width: 100%;
+    }
+
+
+    .logo {
+
+        font-size: 28px;
+    }
+
+
+    .subtitle {
+
+        font-size: 14px;
+
+        margin-bottom: 28px;
+    }
+
+
+    input,
+    button {
+
+        height: 50px;
+    }
+
+
+    .results {
+
+        min-height: 300px;
+
+        max-height: 450px;
+    }
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 480px) {
+
+    .page {
+
+        padding: 30px 18px;
+    }
+
+
+    .logo {
+
+        font-size: 25px;
+    }
+
+
+    .subtitle {
+
+        font-size: 13px;
+
+        margin-bottom: 25px;
+    }
+
+
+    input,
+    button {
+
+        height: 48px;
+
+        font-size: 14px;
+    }
+
+
+    .results {
+
+        min-height: 300px;
+
+        max-height: 400px;
+
+        padding: 12px;
+    }
+
+
+    .comment {
+
+        font-size: 13px;
+    }
+}
+
+
+/* =====================================
+   VERY SMALL PHONES
+===================================== */
+
+@media (max-width: 360px) {
+
+    .page {
+
+        padding: 25px 12px;
+    }
+
+
+    .logo {
+
+        font-size: 23px;
+    }
+
+
+    .results {
+
+        min-height: 280px;
+    }
+}
+
+
+/* =====================================
+   LARGE DESKTOP
+===================================== */
+
+@media (min-width: 1200px) {
+
+    .page {
+
+        padding: 90px 10%;
+    }
+
+
+    .comfindr {
+
+        max-width: 1000px;
+    }
+
+
+    .logo {
+
+        font-size: 36px;
+    }
+
+
+    .subtitle {
+
+        font-size: 16px;
+    }
+
+
+    input,
+    button {
+
+        height: 54px;
+
+        font-size: 15px;
+    }
+
+
+    .results {
+
+        min-height: 400px;
+
+        max-height: 600px;
+    }
+}
